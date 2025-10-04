@@ -1,4 +1,4 @@
-// Function to sanitize user input to prevent XSS attacks.
+
 const sanitizeHTML = (str) => {
     if (!str) return '';
     return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
@@ -74,7 +74,7 @@ function renderClassicTemplate(data) {
     `;
 }
 
-// Export the functions to be used in other files (like index.js)
+
 module.exports = {
     renderClassicTemplate,
     renderModernTemplate,
